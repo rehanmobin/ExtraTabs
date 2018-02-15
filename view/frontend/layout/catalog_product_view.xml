@@ -1,0 +1,7 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Mage4\ExtraTabs\Block\Catalog\Product\View\Tabs" name="product.info.tabs" as="info_tabs" template="Mage4_ExtraTabs::catalog/product/view/tabs.phtml" after="product.info.media" ifconfig="mage4_extrattabs/general/is_enabled" />
+        </referenceContainer>
+    </body>
+</page>

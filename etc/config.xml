@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <mage4_extrattabs>
+            <tab_config>
+                <description_title>Details</description_title>
+                <description_pos>1</description_pos>
+                <additional_title>Additional Information</additional_title>
+                <additional_pos>2</additional_pos>
+                <review_title>Reviews</review_title>
+                <review_pos>3</review_pos>
+                <related_title>Related Products</related_title>
+                <related_pos>4</related_pos>
+            </tab_config>
+        </mage4_extrattabs>
+    </default>
+</config>

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="extra_tabs" translate="label" sortOrder="1000">
+            <label>Mage 4</label>
+        </tab>
+        <section id="mage4_extrattabs" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Extra Tabs Configuration</label>
+            <tab>extra_tabs</tab>
+            <resource>Mage4_ExtraTabs::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General</label>
+               <field id="is_enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Enable/Disable ExtraTabs extension.</comment>
+                </field>
+                
+            </group>
+            <group id="tab_config" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Tabs Config</label>
+               <field id="description" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Description</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="description_title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <comment>Product description tab title</comment>
+                </field>
+                <field id="description_pos" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Postition</label>
+                    <comment>Product description tab position.</comment>
+                </field>
+               <field id="additional" translate="label" type="select" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Additional Attributes</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="additional_title" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <comment>Additional Attributes tab Title.</comment>
+                </field> 
+                <field id="additional_pos" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Postition</label>
+                    <comment>Additional Attributes tab position.</comment>
+                </field>
+                <field id="review" translate="label" type="select" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Product Reviews</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="review_title" translate="label" type="text" sortOrder="80" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <comment>Product Reviews tab Title.</comment>
+                </field> 
+                <field id="review_pos" translate="label" type="text" sortOrder="90" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Postition</label>
+                    <comment>Product Reviews tab position.</comment>
+                </field>
+                <field id="related" translate="label" type="select" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Related Products</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="related_title" translate="label" type="text" sortOrder="110" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                    <comment>Related Products tab Title.</comment>
+                </field> 
+                <field id="related_pos" translate="label" type="text" sortOrder="120" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Postition</label>
+                    <comment>Related Products tab position.</comment>
+                </field>
+                <field id="attributes" translate="label comment tooltip" sortOrder="130" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Product TextArea Attributes</label>
+                        <frontend_model>Mage4\ExtraTabs\Block\Adminhtml\System\Config\Fields\Attributemap</frontend_model>
+                        <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                        <comment><![CDATA[Map product text_area attributes into tabs]]></comment>
+                </field>
+                <field id="blocks" translate="label comment tooltip" sortOrder="140" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Static Blocks</label>
+                        <frontend_model>Mage4\ExtraTabs\Block\Adminhtml\System\Config\Fields\Blockmap</frontend_model>
+                        <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                        <comment>Map Static into tabs</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

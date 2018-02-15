@@ -1,0 +1,14 @@
+<?php
+
+    $blockCode = $block->getBlockCode();
+
+    if ($blockCode): ?>
+<div class="product cms-block <?php /* @escapeNotVerified */ echo $blockCode; ?>">
+    <div class="value">
+        <?php echo $this->getLayout()
+                    ->createBlock('Magento\Cms\Block\Block')
+                    ->setBlockId($blockCode)
+                    ->toHtml(); ?>
+    </div>
+</div>
+<?php endif; ?>
